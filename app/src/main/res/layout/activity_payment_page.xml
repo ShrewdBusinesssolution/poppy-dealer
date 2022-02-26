@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".views.activity.payment.PaymentPage">
+
+
+    <include
+        android:id="@+id/paymentPageToolbar"
+        layout="@layout/common_toolbar" />
+
+    <TextView
+        android:id="@+id/paymentCredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/round_outline_layout"
+        android:backgroundTint="@color/app_color"
+        android:fontFamily="@font/exo_2_semibold"
+        android:padding="10dp"
+        android:text="credit: ₹ 10, 000"
+        android:textColor="@color/white" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/paymentRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

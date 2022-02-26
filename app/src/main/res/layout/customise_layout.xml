@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/customizeSheetContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/customizeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/app_color"
+        android:fontFamily="@font/exo_2_bold"
+        android:gravity="center"
+        android:text="Title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/customizeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/exo_2_semibold"
+                        android:paddingTop="20dp"
+                        android:text="Bed Size"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="15sp" />
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/BedSizeRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <!--            <Spinner-->
+                    <!--                android:visibility="gone"-->
+                    <!--                android:id="@+id/customizeColorSpinner"-->
+                    <!--                android:layout_width="match_parent"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:layout_marginTop="5dp"-->
+                    <!--                android:theme="@style/mySpinnerItemStyle" />-->
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/exo_2_semibold"
+                        android:paddingTop="20dp"
+                        android:text="Select Size"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="15sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/SizeSizeRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <!--                <Spinner-->
+                    <!--                    android:id="@+id/customizeThickSpinner"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="5dp"-->
+                    <!--                    android:theme="@style/mySpinnerItemStyle" />-->
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/exo_2_semibold"
+                        android:paddingTop="20dp"
+                        android:text="Thickness Size"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color_secondary"
+                        android:textSize="15sp" />
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/ThicknessRecycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <!--                <Spinner-->
+                    <!--                    android:id="@+id/customizeThickSpinner"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:layout_marginTop="5dp"-->
+                    <!--                    android:theme="@style/mySpinnerItemStyle" />-->
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/exo_2_semibold"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:text="Quantity"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_color_secondary"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_outline_layout"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/customizeQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#F3F3F3"
+                    android:fontFamily="@font/exo_2_medium"
+                    android:hint="Product Quantity"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color_secondary" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/customizeCustomSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <EditText
+                        android:id="@+id/customizeLength"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_outline_layout"
+                        android:backgroundTint="#7CEAE7E7"
+                        android:fontFamily="@font/exo_2_medium"
+                        android:hint="Length (in)"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:fontFamily="@font/exo_2_bold"
+                        android:text="X"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/customizeWidth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/round_outline_layout"
+                        android:backgroundTint="#7CEAE7E7"
+                        android:fontFamily="@font/exo_2_medium"
+                        android:hint="Width (in)"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/customizeAlertLength"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/exo_2_bold"
+                    android:text="•Please round down the size (For eg. if the size that you need is 74.6 please make it 74)."
+                    android:textColor="@color/app_color"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:id="@+id/customizeAlertWidth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/exo_2_bold"
+                    android:text="•Please round down the size (For eg. if the size that you need is 74.6 please make it 74)."
+                    android:textColor="@color/app_color"
+                    android:textSize="10sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/exo_2_light"
+                    android:text="•Please round down the size (For eg. if the size that you need is 74.6 please make it 74)."
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/customizeCustom"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round_outline_layout"
+                android:backgroundTint="#51C46AAF"
+                android:fontFamily="@font/exo_2_medium"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/normalsize"
+                android:textAlignment="center"
+                android:textColor="@color/app_color"
+                android:textSize="13sp"
+                tools:ignore="RtlCompat" />
+
+            <LinearLayout
+
+                android:layout_gravity="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/gradient_end_color"
+                    android:layout_weight="2"
+                    android:text="Price ₹."
+                    android:textSize="21dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/exo_2"
+                    android:textAlignment="textEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/RateCus"
+                    android:text="0.00"
+                    android:textSize="21dp"
+                    android:paddingEnd="30dp"
+                    android:textColor="@color/gradient_end_color"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:fontFamily="@font/exo_2"
+                    android:textAlignment="textEnd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/customizeAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/common_gradient_left"
+                android:fontFamily="@font/exo_2_semibold"
+                android:gravity="center"
+                android:text="Add to Cart"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/repeatLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/repeatItemModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:text="BT, 6inch, "
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/repeatItemColor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2_bold"
+                    android:gravity="end"
+                    android:text="RED"
+                    android:textColor="@color/status_color_red"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/repeatItemSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:text=", 75x 48 | 1905x 1219"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/repeatItemQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="end"
+                    android:text="x1"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/repeatItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/common_gradient_left"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:text="Repeat"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/customizeItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/common_gradient_left"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:text="Customise"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

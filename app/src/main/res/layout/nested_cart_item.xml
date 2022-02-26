@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="5dp"
+        android:background="#31858585" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity=""
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nestedCartModel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fontFamily="@font/exo_2_semibold"
+            android:gravity="center"
+            android:text="BT, 6inch, "
+            android:textAlignment="textStart"
+            android:textColor="@color/text_color_primary"
+            android:textSize="12sp"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/nestedCartColor"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/exo_2_bold"
+            android:gravity="center"
+            android:text="RED"
+            android:textColor="@color/status_color_red"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/nestedCartSize"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:fontFamily="@font/exo_2_semibold"
+            android:gravity="center"
+            android:text=", 75x 48 | 1905x 1219"
+            android:textAlignment="textStart"
+            android:textColor="@color/text_color_primary"
+            android:textSize="12sp"
+            tools:ignore="RtlCompat" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:id="@+id/nestedCartAddLayout"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:background="@drawable/round_outline_appcolor_edge"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="4dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <ImageView
+                android:id="@+id/nestedCartMinus"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/minus"
+                app:tint="@color/app_color" />
+
+            <TextView
+                android:id="@+id/nestedCartQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="@font/exo_2_bold"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/app_color"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:id="@+id/nestedCartPlus"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_bg"
+                android:scaleType="fitXY"
+                android:src="@drawable/plus"
+                app:tint="@color/app_color" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/nestedCartQuantityCount"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end"
+            android:fontFamily="@font/exo_2_bold"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingTop="4dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_primary"
+            android:textSize="10sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

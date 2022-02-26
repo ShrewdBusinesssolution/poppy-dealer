@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_white">#F5F5F5</color>
+    <color name="light_app_color">#E6C3DE</color>
+    <color name="shimmer_color">#D1D1D1</color>
+    <color name="gpay">#87F5FE</color>
+    <color name="phpay">#8A5EDA</color>
+    <color name="ph">#2196f3</color>
+    <color name="whats">#3ab54a</color>
+    <color name="status_green">#34E58D</color>
+    <color name="status_app_color">#FF7070</color>
+    <color name="status_color_red">#eF6767</color>
+    <color name="status_color_blue">#67E6Ef</color>
+    <color name="statusBar_app_color">#84226d</color>
+    <color name="app_color">#84226d</color>
+    <color name="tab_indicator_gray">#3B989898</color>
+    <color name="gradient_start_color">#DF84226D</color>
+    <color name="gradient_end_color">#C46AAF</color>
+    <color name="text_color_primary">#202020</color>
+    <color name="text_color_secondary">#717171</color>
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_outline_layout"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="5dp"
+            android:background="@color/app_color"
+            android:fontFamily="@font/exo_2_bold"
+            android:gravity="center"
+            android:text="FeedBack"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_outline_layout"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/feedbackText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="#F3F3F3"
+                android:fontFamily="@font/exo_2_medium"
+                android:gravity="top|left"
+                android:hint="Give Your Feedback"
+                android:inputType="textMultiLine|textVisiblePassword"
+                android:padding="10dp"
+                android:scrollHorizontally="false"
+                android:textAlignment="textStart"
+                android:textColor="@color/text_color_secondary"
+                android:textSize="15sp"
+                tools:ignore="RtlCompat" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/feedBackCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/common_gradient_left"
+                android:fontFamily="@font/exo_2_semibold"
+                android:gravity="center"
+                android:text="Cancel"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/feedBackSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/common_gradient_left"
+                android:fontFamily="@font/exo_2_semibold"
+                android:gravity="center"
+                android:text="Submit"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

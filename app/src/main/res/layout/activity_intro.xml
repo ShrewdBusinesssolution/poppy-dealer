@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".views.activity.intro.Intro">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/introScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/introPager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="130dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></androidx.viewpager.widget.ViewPager>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/introIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/introPager"
+            app:tabBackground="@drawable/indicator_selector"
+            app:tabIndicatorHeight="0dp"></com.google.android.material.tabs.TabLayout>
+
+        <FrameLayout
+            android:id="@+id/introNext"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/circle_bg"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.99"
+            app:layout_constraintStart_toEndOf="@+id/introIndicator"
+            app:layout_constraintTop_toBottomOf="@+id/introPager"
+            app:layout_constraintVertical_bias="0.513">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_forward"
+                app:tint="@color/white" />
+
+        </FrameLayout>
+
+        <FrameLayout
+
+            android:id="@+id/introStart"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/common_gradient_left"
+            android:orientation="vertical"
+            android:padding="5sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/introPager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/exo_2_medium"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:text="Get Sleepy"
+                android:textColor="@color/white" />
+
+        </FrameLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/introLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/loginLayout"
+            layout="@layout/login" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/introRegister"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <include
+            android:id="@+id/registerLayout"
+            layout="@layout/signup" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

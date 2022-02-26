@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Poppy Dealer</string>
+    <string name="privacy">By continuing, you agree to Watch Now <b>Terms\n of Service, Privacy Policy</b></string>
+    <string name="normalsize">Can’t find your mattress size?  <b>Get Custom Size</b></string>
+    <string name="abnormalsize">Do you want mattress normal size? <b>Click Here</b></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="grand">GRAND</string>
+    <string name="premium">PREMIUM</string>
+    <string name="medico">MEDICO</string>
+    <string name="puform">PU FORM</string>
+    <string name="rubberized">RUBBERIZED COIR</string>
+    <string name="latex">LATEX</string>
+    <string name="pending_msg">Please pay pending payment  to place this Ordery!</string>
+
+
+    <string-array name="price_filter">
+
+        <item>low to high</item>
+
+        <item>high to low</item>
+
+    </string-array>
+
+
+    <string-array name="status_filter">
+
+        <item>Default</item>
+
+        <item>Pending</item>
+
+        <item>Completed</item>
+
+    </string-array>
+
+
+    <string-array name="mixed_filter">
+
+        <item>Status</item>
+
+        <item>Date</item>
+
+    </string-array>
+
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

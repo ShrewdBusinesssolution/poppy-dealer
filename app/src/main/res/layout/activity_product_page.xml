@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:orientation="vertical"
+    tools:context=".views.activity.ProductPage">
+
+
+    <include
+        android:id="@+id/productPageToolbar"
+        layout="@layout/common_toolbar" />
+
+    <com.google.android.material.tabs.TabLayout
+
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:tabIndicator="@drawable/tab_selected"
+        app:tabIndicatorAnimationMode="elastic"
+        app:tabIndicatorHeight="30dp"
+        app:tabSelectedTextColor="@color/white"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="@color/text_color_secondary" />
+
+    <androidx.viewpager.widget.ViewPager
+
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:visibility="gone" />
+</LinearLayout>

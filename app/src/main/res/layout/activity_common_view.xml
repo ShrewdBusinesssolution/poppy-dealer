@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".views.activity.support.CommonView">
+
+    <include
+        android:id="@+id/commonPageToolbar"
+        layout="@layout/common_toolbar" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circle_bg"
+                android:backgroundTint="@color/app_color"
+                android:padding="15dp"
+                android:src="@drawable/headset"
+                app:tint="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/exo_2_bold"
+                android:gravity="start"
+                android:text="Company Contact Info"
+                android:textColor="@color/text_color_primary"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="start"
+                    android:text="Company Name"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/supportCompanyName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="end"
+                    android:text="Poppy Mattress"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="start"
+                    android:text="Email"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/supportEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="end"
+                    android:text="support@poppyindia.com"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="start"
+                    android:text="Mobile"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/supportMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="end"
+                    android:text="+91 90548 48481"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="start"
+                    android:text="Warehouse"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/supportWarehouse"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="end"
+                    android:text="Poppy, H-5,\n Unit-3, Avarampaalaiyam,\n Coimbatore,\n TamilNadu"
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="start"
+                    android:text="Address"
+                    android:textColor="@color/text_color_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/supportAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/exo_2_semibold"
+                    android:gravity="end"
+                    android:text="S.F.No. 283/1B, Sukkampatti (Manalmedu), Thalapatti (P.O.), Manmangalam (Tk), Karur - 639003, Tamil Nadu, India."
+                    android:textColor="@color/text_color_primary"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/supportGmail"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/gmail" />
+
+                <ImageView
+                    android:id="@+id/supportWhatsapp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/whatsapp" />
+
+                <ImageView
+                    android:id="@+id/supportFacebook"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/facebook" />
+
+                <ImageView
+                    android:id="@+id/supportTwitter"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/twitter" />
+
+
+                <ImageView
+                    android:id="@+id/supportInstagram"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/instagram" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

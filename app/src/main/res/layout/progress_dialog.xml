@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="60dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="7dp">
+
+    <!--    DC101010-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <ProgressBar
+            android:id="@+id/progressbar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:indeterminateDrawable="@anim/spinner" />
+
+
+        <TextView
+            android:id="@+id/loadingTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/exo_2_semibold"
+            android:text="Loading"
+            android:textAlignment="center"
+            android:textColor="@color/text_color_primary"
+            android:textSize="14dp" />
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
